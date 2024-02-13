@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    border:border-box;
+}
+.hero-main{
+    height: 700px;
+    width: 100%;
+    background-image: url("netflix-hero1.jpg");
+    background-size: cover;
+    box-shadow:80px 80px 300px 50px black inset;
+}
+    /**Header**/
+.header{
+    width:100%;
+    height: 92px;
+    padding:24px 32px 24px 32px;
+    display:flex;
+    background-color: transparent;
+}
+.header-logo{
+    height:60px;
+    width:148px;
+    margin-left:120px;
+    margin-right:780px;
+}
+.header-logo img{
+    height:40px;
+}
+.sign-in{
+    height: 32px;
+    width: 76px;
+    background-color:rgb(229, 9, 20);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border-radius:5px;
+}
+.sign-in:hover{
+    background-color: rgb(176, 13, 21);
+    transition: background-color 0.3s linear;
+}
+.sign-in a{
+    font-family: helvetica;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color:white;
+    text-decoration: none;
+}
+.main-heading{
+    width:100%;
+    height:32%;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items:center;
+    margin-top: 1.5rem;
+}
+.main-heading h1{
+    color:white;
+    font-family: helvetica;
+    font-weight:900;
+    font-size:2.8rem;
+}
+.main-heading p{
+    color:white;
+    margin-top:1.2rem;
+    font-family: helvetica;
+    font-weight:300;    
+    font-size:1.5rem;
+}
+form{
+    height:120px;
+    display: flex;
+    margin-top: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    color:white;
+    font-family: helvetica;
+    font-weight:400;
+    font-size:1.25rem;
+    margin-bottom: 1rem;
+}
+.input{
+    display:flex;
+    height:4rem;
+    justify-content: center;
+    align-items: center;
+}
+.input input{
+    height: 3.3rem;
+    width: 360px;
+    border:0.2px solid rgb(148, 148, 148);
+    border-radius: 4px;
+    background-color: rgba(29, 27, 27, 0.8);
+    margin-right: 0.5rem;
+    padding-left: 1rem;
+    font-family: arial;
+    font-weight:bold;
+    color:white;
+}
+.input button{
+    height: 3.3rem;
+    width: 210px;
+    border:none;
+    border-radius: 4px;
+    background-color: rgb(229, 9, 20);
+    color:white;
+    font-size: 1.5rem;
+    font-weight:bold;
+}
+.input button:hover{
+    background-color: rgb(176, 13, 21);
+    transition: background-color 0.3s linear;
+}
+/**tv box**/
+.cards{
+    height: 520px;
+    width:100%;
+    border-top: 8px solid rgb(41, 41, 41);
+    background-color:black ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    width:40%;
+    height:65%;
+}
+.image img{
+    width:100%;
+    height:100%;
+}
+.detail{
+    width:40%;
+    height: 65%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items:flex-start;
+}
+.detail h2{
+    color:white;
+    font-family: helvetica;
+    font-weight:900;
+    font-size:2.8rem;   
+}
+.detail p{
+    color:white;
+    margin-top:1rem;
+    font-family: helvetica;
+    font-weight:300;    
+    font-size:1.5rem;
+}
+/**download box**/
+.mbl-image{
+    height:80%;
+    margin-right:20px;
+    display: grid;
+    grid-template-columns:  repeat(4,1fr);
+    grid-template-rows:  repeat(4,1fr);
+}
+.mbl-image img{
+    z-index:index -1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+.mbl-image-downloading{
+    height: 80px;
+    width: 280px;
+    padding:8px 12px;
+    background-color: black;
+    z-index:index 1;
+    display:flex;
+    z-index:index 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    justify-self: center;
+    position: relative;
+    bottom: 30px;
+    border-radius:8px;
+    border:3px solid rgb(41, 41, 41);  
+}
+.mbl-image-downloading img{
+    height: 72px;
+    width:52px;
+    margin-right:1rem;
+}
+.download-title{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right:1rem;
+}
+.top-title{
+    font-size:16px;
+    font-family: helvetica;
+    color:#ffffff;
+}
+.below-title{
+    font-size:14px;
+    font-family: helvetica;
+    color:#0071eb;
+}
+.download-animation{
+    height:80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ani{
+    height:30px;
+    width: 30px;
+    border-radius: 50%;
+    border:5px solid black;
+    border-top: 5px solid #0071eb;
+    animation: download 1s ease-in-out 0.2s infinite normal;
+}
+@keyframes download{
+    from {transform: rotate(0deg);}      
+    to {transform: rotate(360deg);}
+    }
+
+/**watch box**/
+.watch{
+    height: 450px;
+    justify-content: flex-start;
+}
+.watch_detail{
+    margin-left: 122px;
+}
+/**Questions box**/
+.queries{
+    height:930px;
+    width:100vw;
+    display:flex;
+    flex-direction: column;
+}
+.queries h2{
+    font-family:helvetica;
+    font-size: 3rem;
+    text-align:center;
+    color:white;
+}
+.questions{
+    margin-left:125px;
+    background-color: rgb(45,45,45);
+    height: auto;
+    width:75%;  
+    align-items: center;
+    padding:1.5rem;
+    cursor:pointer;
+    margin-bottom: 10px;
+}
+.question-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.question-main-1{
+    font-family:helvetica;
+    font-size: 1.5rem;
+    color:#ffffff;
+    width:250px;
+    align-self: center; 
+}
+.question-main-2{
+    font-weight: 200;
+    font-size: 36px;
+    color:#ffffff;  
+    align-self: center; 
+    justify-self:end;
+}
+.slide{
+    grid-column: 1 /span 2;
+    clear:both;
+    width:100%;
+    height:0px;
+    overflow: hidden;
+    transition: height 0.4s ease;
+}
+.slide p{
+    font-family:helvetica;
+    font-size: 1.5rem;
+    color:#ffffff;
+}
+#touch1,#touch3,#touch4,#touch5,#touch6,#touch7{
+    position: absolute; 
+    opacity: 0; 
+    height: 0px;
+}    
+#touch1:checked + .slide1 {
+    height: 200px;}  
+#touch3:checked + .slide3 {
+    height: 120px;} 
+#touch4:checked + .slide4 {
+    height: 200px;} 
+#touch5:checked + .slide5 {
+    height: 120px;} 
+#touch6:checked + .slide6 {
+    height: 100px;} 
+#touch7:checked + .slide7 {
+    height: 150px;} 
+.form-2nd{
+    margin:40px 0px 40px;
+}
+/**footer**/
+footer{
+    height: 420px;
+    width:100%;
+    border-top: 8px solid rgb(41, 41, 41);
+    background-color:black ;
+}
+#contact{
+    display:block; 
+    font-size:0.9rem;
+    font-family:helvetica;
+    color:rgb(167, 167, 167);
+    margin:50px 0px 30px 145px;
+}
+.lists{    
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.lists a{
+    display:block; 
+    font-size:0.9rem;
+    margin-bottom:30px;
+    font-family:helvetica;
+    color:rgb(167, 167, 167);
+}
+.lists ul{
+    width:230px;
+}
+.select_language{
+    height: 40px;
+    width:100vw;
+    padding-left: 145px;
+}
+.select_language select{
+    width: 123px;
+    height: 32px;
+    border-radius: 4px;
+    background-color:rgb(13, 13, 13);
+    color:#ffffff;
+    font-size: 1rem;
+}
+.copyright{
+    font-size: 0.8rem;
+    margin-top: 20px;
+    font-family:helvetica;
+    color:rgb(167, 167, 167);
+    padding-left: 145px;
+}
