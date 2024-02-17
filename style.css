@@ -15,13 +15,14 @@
     height: 92px;
     padding:24px 32px 24px 32px;
     display:flex;
+    justify-content: space-around;
     background-color: transparent;
 }
 .header-logo{
     height:60px;
     width:148px;
-    margin-left:120px;
-    margin-right:780px;
+    /* margin-left:120px;
+    margin-right:780px; */
 }
 .header-logo img{
     height:40px;
@@ -359,4 +360,71 @@ footer{
     font-family:helvetica;
     color:rgb(167, 167, 167);
     padding-left: 145px;
+}
+/**    Media Queries    **/
+@media screen and (max-width:420px){
+    /**    BOX 1    **/
+    .hero-main{
+        height: 480px;
+        width: 100%;
+    }
+    .header{
+        height: 32px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .header-logo{
+        height:24px;
+        width:89px;
+        justify-self: start;
+    }
+    .header-logo img{
+        height:24px;
+        width:89px;
+    }
+    .sign-in{
+        height: 32px;
+        width: 89px;
+        justify-self:center;
+    }
+    .main-heading{
+        align-items:center;
+    }
+    .main-heading h1{
+        font-weight:700;
+        font-size:32px;
+        text-align: center;
+    }
+    .main-heading p{
+        font-weight:200;    
+        font-size:18px;
+    }
+    form{
+        height:168px;
+        display: flex;
+        margin-top: 1.5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h3{
+        font-weight:200;
+        font-size:18px;
+        text-align: center;
+    }
+    .input{
+        display:flex;
+        flex-direction:column;
+        height:112px;
+    }
+    .input input{
+        width: 316px;
+        height:48px;
+    }
+    .input button{
+        width: 157px;
+        height: 48px;
+        margin-top: 16px;
+        font-size:18px;
+    }
 }
